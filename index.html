@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Salesforce portfolio featuring CRM projects, Flow Builder automation, custom objects, reports and dashboards.">
+<title>Your Name | Salesforce Portfolio</title>
+<style>
+:root{--navy:#081b33;--navy2:#102b4c;--blue:#1688f2;--sky:#75c7ff;--ink:#14243a;--muted:#5b6b80;--pale:#f3f8ff;--line:#dce7f4;--white:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,Segoe UI,Arial,sans-serif;color:var(--ink);background:#fff;line-height:1.65}
+a{color:inherit}.wrap{width:min(1100px,92%);margin:auto}.nav{display:flex;justify-content:space-between;align-items:center;padding:20px 0;gap:20px}.brand{display:flex;align-items:center;gap:10px;font-weight:800;text-decoration:none}.logo{display:grid;place-items:center;width:40px;height:40px;border-radius:13px;background:var(--blue);color:white;font-size:23px}.navlinks{display:flex;gap:22px;flex-wrap:wrap}.navlinks a{text-decoration:none;color:#d7e8fb;font-size:14px}.hero{background:radial-gradient(ellipse at 80% 20%,#174c7e 0,transparent 36%),linear-gradient(135deg,var(--navy),var(--navy2));color:white;padding:0 0 78px}.eyebrow{color:var(--sky);font-weight:800;letter-spacing:2px;text-transform:uppercase;font-size:12px}.hero-grid{display:grid;grid-template-columns:1.5fr .8fr;gap:50px;align-items:center;padding-top:65px}.hero h1{font-size:clamp(38px,6vw,66px);line-height:1.08;letter-spacing:-1.7px;margin:14px 0 22px}.hero p{font-size:18px;color:#d7e6f8;max-width:650px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.btn{display:inline-block;text-decoration:none;font-weight:750;padding:12px 18px;border-radius:11px;border:1px solid transparent}.primary{background:var(--blue);color:white}.secondary{border-color:#7392b4;color:white}.profile-card{padding:26px;border:1px solid #355779;border-radius:22px;background:#102a48d9;box-shadow:0 24px 60px #0003}.avatar{width:78px;height:78px;border-radius:22px;display:grid;place-items:center;background:linear-gradient(135deg,#1688f2,#7ad2ff);font-size:36px;margin-bottom:18px}.profile-card h2{margin:0 0 3px;font-size:22px}.profile-card p{font-size:14px;margin:0 0 18px}.chip{display:inline-block;border:1px solid #416488;border-radius:99px;padding:5px 10px;margin:3px;font-size:12px;color:#e3f2ff}
+section{padding:76px 0}.section-head{max-width:680px;margin-bottom:32px}.section-head h2{font-size:clamp(28px,4vw,40px);letter-spacing:-.8px;line-height:1.2;margin:7px 0 12px}.section-head p{color:var(--muted);margin:0}.kicker{color:#0875d1;font-size:12px;font-weight:800;letter-spacing:1.8px;text-transform:uppercase}
+.skills{background:var(--pale)}.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{border:1px solid var(--line);border-radius:17px;padding:23px;background:white;box-shadow:0 8px 25px #163b5d08}.icon{width:45px;height:45px;border-radius:13px;background:#e5f3ff;color:#0875d1;display:grid;place-items:center;font-size:22px;font-weight:800}.card h3{margin:15px 0 7px}.card p{color:var(--muted);font-size:14px;margin:0}.project{display:grid;grid-template-columns:1fr 1fr;gap:35px;align-items:center}.project-visual{min-height:320px;border-radius:22px;background:linear-gradient(145deg,#0b2341,#176db5);padding:25px;display:flex;align-items:center;justify-content:center;overflow:hidden}.dashboard{width:100%;background:#fff;border-radius:14px;padding:18px;box-shadow:0 20px 40px #001a3380}.dash-top{display:flex;justify-content:space-between;align-items:center;font-size:13px;font-weight:800}.mini-label{font-size:10px;color:var(--muted)}.metric-row{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:15px 0}.metric{background:#f2f7fd;border-radius:8px;padding:10px}.metric strong{display:block;color:#086fc5;font-size:17px}.bars{height:105px;display:flex;align-items:end;gap:8px;border-bottom:1px solid var(--line);padding:0 10px}.bar{flex:1;background:linear-gradient(#55b6ff,#1688f2);border-radius:5px 5px 0 0}.project-copy h3{font-size:27px;margin:8px 0}.project-copy p,.project-copy li{color:var(--muted)}.project-copy ul{padding-left:20px}.tag{display:inline-block;color:#075da7;background:#e8f4ff;border-radius:7px;padding:5px 9px;font-size:12px;font-weight:750;margin:3px}.steps{counter-reset:step}.step{display:flex;gap:15px;margin:18px 0}.num{flex:0 0 38px;height:38px;border-radius:12px;background:#e5f3ff;color:#0875d1;display:grid;place-items:center;font-weight:900}.step h3{margin:0 0 4px;font-size:17px}.step p{margin:0;color:var(--muted);font-size:14px}.contact{background:linear-gradient(135deg,var(--navy),#123b65);color:white;text-align:center}.contact p{color:#d4e5f8;max-width:620px;margin:0 auto 24px}.contact .section-head{margin:0 auto 24px}.contact .section-head p{margin-top:12px}.contact-links{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}.contact-links a{border:1px solid #557da5;border-radius:10px;padding:10px 15px;text-decoration:none;font-weight:700}.contact-links a:hover,.secondary:hover{background:#ffffff16}footer{background:#061426;color:#9bb3cb;padding:22px 0;font-size:12px}.footer-row{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+@media(max-width:760px){.hero-grid,.project{grid-template-columns:1fr}.hero-grid{padding-top:42px}.profile-card{max-width:430px}.grid3{grid-template-columns:1fr}.nav{align-items:flex-start;flex-direction:column}.navlinks{gap:14px}.hero{padding-bottom:55px}section{padding:55px 0}.project-visual{min-height:260px}}
+</style>
+</head>
+<body>
+<header class="hero" id="home">
+  <div class="wrap">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="#home"><span class="logo">☁</span><span>Salesforce Portfolio</span></a>
+      <div class="navlinks"><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#contact">Contact</a></div>
+    </nav>
+    <div class="hero-grid">
+      <div>
+        <div class="eyebrow">CRM · Automation · Data</div>
+        <h1>Building smarter business solutions with Salesforce.</h1>
+        <p>Hello, I'm <strong>[Your Name]</strong> — an aspiring Salesforce Developer learning by building practical CRM solutions, automating business processes, and organizing data.</p>
+        <div class="actions"><a class="btn primary" href="#projects">Explore my project ↓</a><a class="btn secondary" href="#contact">Connect with me</a></div>
+      </div>
+      <aside class="profile-card">
+        <div class="avatar">☁</div>
+        <h2>[Your Name]</h2>
+        <p>Aspiring Salesforce Developer</p>
+        <span class="chip">Salesforce Flow</span><span class="chip">Custom Objects</span><span class="chip">Reports</span><span class="chip">Dashboards</span>
+      </aside>
+    </div>
+  </div>
+</header>
+
+<main>
+<section id="about">
+  <div class="wrap">
+    <div class="section-head"><div class="kicker">A little about me</div><h2>Learning by building.</h2><p>I'm growing my Salesforce skills through hands-on practice. I enjoy understanding how CRM data connects and how automation can reduce repetitive work and support business teams.</p></div>
+  </div>
+</section>
+
+<section class="skills" id="skills">
+  <div class="wrap">
+    <div class="section-head"><div class="kicker">What I'm learning</div><h2>Salesforce skills</h2><p>Practical skills developed through my learning and Telecommunications CRM project.</p></div>
+    <div class="grid3">
+      <article class="card"><div class="icon">▦</div><h3>Custom Objects & Fields</h3><p>Model business information with custom objects, fields, and relationships to organize telecom plans and opportunity details.</p></article>
+      <article class="card"><div class="icon">↗</div><h3>Flow Builder</h3><p>Build record-triggered automation for business processes, including status-based actions and email notifications.</p></article>
+      <article class="card"><div class="icon">▥</div><h3>Reports & Dashboards</h3><p>Organize CRM information into reports and dashboard components to make key business information easier to review.</p></article>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="wrap">
+    <div class="section-head"><div class="kicker">Featured work</div><h2>Telecommunications CRM System</h2><p>A hands-on Salesforce project designed around telecom sales and plan management.</p></div>
+    <div class="project">
+      <div class="project-visual" aria-label="Illustrative CRM dashboard preview">
+        <div class="dashboard">
+          <div class="dash-top"><span>Telecom CRM · Overview</span><span style="color:#1688f2">● Demo</span></div>
+          <div class="metric-row"><div class="metric"><span class="mini-label">Opportunities</span><strong>Sales</strong></div><div class="metric"><span class="mini-label">Plans</span><strong>Catalog</strong></div><div class="metric"><span class="mini-label">Automation</span><strong>Flows</strong></div></div>
+          <div class="mini-label">Illustrative dashboard chart</div>
+          <div class="bars"><div class="bar" style="height:38%"></div><div class="bar" style="height:62%"></div><div class="bar" style="height:48%"></div><div class="bar" style="height:85%"></div><div class="bar" style="height:70%"></div><div class="bar" style="height:96%"></div><div class="bar" style="height:60%"></div></div>
+          <div class="mini-label" style="margin-top:10px">Illustration only — replace with a screenshot of your actual Salesforce dashboard.</div>
+        </div>
+      </div>
+      <div class="project-copy">
+        <span class="tag">Salesforce CRM</span><span class="tag">Learning Project</span>
+        <h3>Project overview</h3>
+        <p>This project explores how Salesforce can support a telecommunications business by organizing plans and sales opportunities, then automating parts of the sales process.</p>
+        <h3 style="font-size:18px">Key features</h3>
+        <ul><li>Custom objects and fields for telecom plan information.</li><li>Relationships between relevant CRM records.</li><li>Flow Builder automation for opportunity status changes.</li><li>Email alert concept when an opportunity reaches Closed Won, including relevant plan details.</li><li>Reports and dashboards to summarize CRM information.</li></ul>
+        <p><strong>What I learned:</strong> how data modeling, record-triggered flows, and reporting work together in a CRM.</p>
+        <p><em>Project status: Personal learning project. Update this description to match the features you have completed and tested.</em></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="skills">
+  <div class="wrap">
+    <div class="section-head"><div class="kicker">My approach</div><h2>How I solve problems</h2></div>
+    <div class="grid3">
+      <article class="card"><div class="icon">01</div><h3>Understand the process</h3><p>Identify the business need and the information users must track.</p></article>
+      <article class="card"><div class="icon">02</div><h3>Design the solution</h3><p>Structure objects and fields, then build automation to support the workflow.</p></article>
+      <article class="card"><div class="icon">03</div><h3>Test and improve</h3><p>Check expected results, troubleshoot issues, and improve the user experience.</p></article>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="wrap">
+    <div class="section-head"><div class="eyebrow">Let's connect</div><h2>Open to learning and opportunities.</h2><p>I'm continuing to build my Salesforce skills and would be happy to connect with other Salesforce professionals and teams.</p></div>
+    <div class="contact-links">
+      <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+      <a href="https://www.salesforce.com/trailblazer/" target="_blank" rel="noreferrer">Trailblazer ↗</a>
+      <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub ↗</a>
+      <!-- Replace the links above with your personal profile URLs. Add an email link only if you want it public. -->
+    </div>
+  </div>
+</section>
+</main>
+<footer><div class="wrap footer-row"><span>© <span id="year"></span> [Your Name] · Salesforce Portfolio</span><span>Built to showcase my learning journey.</span></div></footer>
+<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>
